@@ -1,18 +1,41 @@
-# Criando um Banco Digital com Java e Orientação a Objetos
+# Banco Digital em Java
 
-## 02/08/2021 - [Mentoria #1: Tire Suas Dúvidas Sobre Orientação a Objetos](https://www.youtube.com/watch?v=YS6ouOhkyNI)
+## Descrição do Projeto
 
-Desafio: Considerando nosso conhecimento no domínio bancário, iremos abstrair uma solução Orientada a Objetos em Java. Para isso, vamos interpretar o seguinte cenário:
-“Um banco oferece aos seus clientes dois tipos de contas (corrente e poupança), as quais possuem as funcionalidades de depósito, saque e transferência (entre contas da própria instituição).”
+Este projeto implementa um banco digital simples utilizando Java e os princípios de Programação Orientada a Objetos (POO). A aplicação permite a criação de contas bancárias, depósitos, saques, transferências, pagamento de contas, solicitação de empréstimos e impressão de extratos. Toda a interação é realizada via console.
 
-### Abstração
-Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.
+## Funcionalidades Implementadas
 
-### Encapsulamento
-Encapsular significa esconder a implementação dos objetos, criando assim interfaces de uso mais concisas e fáceis de usar/entender. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
+1. **Criação de Contas** : Permite criar contas correntes para clientes.
+2. **Depósito** : Possibilita realizar depósitos em contas existentes.
+3. **Saque** : Permite efetuar saques em contas existentes.
+4. **Transferência** : Permite transferir valores entre contas.
+5. **Pagamento de Contas** : Possibilita pagar contas diretamente da conta do cliente.
+6. **Empréstimos** : Permite solicitar empréstimos.
+7. **Impressão de Extratos** : Permite imprimir extratos com informações da conta.
+8. **Persistência de Dados** : Permite salvar e carregar dados das contas em arquivos.
 
-### Herança
-Permite que você defina uma classe filha que reutiliza (herda), estende ou modifica o comportamento de uma classe pai. A classe cujos membros são herdados é chamada de classe base. A classe que herda os membros da classe base é chamada de classe derivada.
+## Estrutura do Projeto
 
-### Polimorfismo
-Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é capacidade de tratar objetos criados a partir das classes específicas como objetos de uma classe genérica. Cuidado, polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referimos a ele.
+O projeto é composto pelas seguintes classes:
+
+* **Cliente** : Representa um cliente do banco com nome e senha.
+* **Conta** : Classe abstrata que representa uma conta bancária.
+* **ContaCorrente** : Implementação de conta corrente.
+* **ContaPoupanca** : Implementação de conta poupança.
+* **Banco** : Gerencia um conjunto de contas e oferece métodos para adicionar contas e salvar/carregar dados.
+* **Main** : Classe principal que fornece uma interface baseada em console para interagir com o banco digital.
+
+## Como Executar
+
+1. Clone o repositório.
+2. Compile os arquivos `.java`.
+3. Execute o arquivo `Main.java`.
+
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar sugestões ou melhorias através de pull requests.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License]().
